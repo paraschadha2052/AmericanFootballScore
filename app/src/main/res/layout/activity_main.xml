@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -18,45 +19,69 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Team A" />
+                android:text="Team A"
+                android:textSize="16sp"
+                android:textColor="@color/textSecondary"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
 
             <TextView
                 android:id="@+id/scoreA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="0" />
+                android:text="0"
+                android:textColor="@color/textPrimary"
+                android:textSize="56sp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-light"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="threeA"
-                android:text="3 points" />
+                android:text="3 points"
+                android:background="@drawable/roundedbutton"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="twoA"
-                android:text="2 points" />
+                android:text="2 points"
+                android:background="@drawable/roundedbutton"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="oneA"
-                android:text="1 point" />
+                android:text="1 point"
+                android:background="@drawable/roundedbutton"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="sixA"
-                android:text="Touchdown" />
+                android:text="Touchdown"
+                android:background="@drawable/roundedbutton"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
 
         </LinearLayout>
 
         <View
-            android:layout_width="1px"
+            android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/colorAccent" />
+            android:background="#BDBDBD"
+            android:layout_marginTop="20dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -68,38 +93,61 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Team B" />
+                android:text="Team B"
+                android:textSize="16sp"
+                android:textColor="@color/textSecondary"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
 
             <TextView
                 android:id="@+id/scoreB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="0" />
+                android:text="0"
+                android:textColor="@color/textPrimary"
+                android:textSize="56sp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-light"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="threeB"
-                android:text="3 points" />
+                android:text="3 points"
+                android:background="@drawable/roundedbutton"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="twoB"
-                android:text="2 points" />
+                android:text="2 points"
+                android:background="@drawable/roundedbutton"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="oneB"
-                android:text="1 point" />
+                android:text="1 point"
+                android:background="@drawable/roundedbutton"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="sixB"
-                android:text="Touchdown" />
+                android:text="Touchdown"
+                android:background="@drawable/roundedbutton"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
 
         </LinearLayout>
 
@@ -111,6 +159,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="reset"
-        android:text="Reset" />
+        android:text="Reset"
+        android:background="@drawable/roundedbutton"/>
 
 </RelativeLayout>
